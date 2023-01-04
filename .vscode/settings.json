@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "mycomp.h": "c",
+        "stdio.h": "c"
+    }
+}

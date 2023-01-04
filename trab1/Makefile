@@ -1,19 +1,19 @@
-CC = g++
-CFLAGS = -Wall -g
+CC = gcc
+CFLAGS = -c -W -Wall -ansi -pedantic
  
 all: prog
  
-prog: prog.o aloca.o
-	$(CC) -o prog prog.o aloca.o
+prog: main.o parser.o
+	$(CC) -o prog main.o parser.o
  
-prog.o: prog.cpp myComp.h
-	$(CC) -o prog.o prog.cpp -c -W -Wall -ansi -pedantic
+main.o: main.c myComp.h
+	$(CC) -o main.o main.c $(CFLAGS)
  
-aloca.o: aloca.cpp myComp.h
-	$(CC) -o aloca.o aloca.cpp -c -W -Wall -ansi -pedantic
+parser.o: parser.c myComp.h
+	$(CC) -o parser.o parser.c $(CFLAGS)
 
 run:
-	./prog workloadmem0 > text.txt
+	./prog
  
 clean:
 	rm -rf *.o *~ prog
