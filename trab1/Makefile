@@ -5,15 +5,12 @@ all: prog
  
 prog: main.o parser.o
 	$(CC) -o prog main.o parser.o
- 
-main.o: main.c myComp.h
+
+main.o: main.c parser.c
 	$(CC) -o main.o main.c $(CFLAGS)
- 
+
 parser.o: parser.c myComp.h
 	$(CC) -o parser.o parser.c $(CFLAGS)
 
-run:
-	./prog
- 
 clean:
 	rm -rf *.o *~ prog
