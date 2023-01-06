@@ -4,6 +4,7 @@
 
 int main(){
     printf("hello from the main\n");
-
+  
     helloP();
+    return 1;
 }
