@@ -1,4 +1,4 @@
-#include "myComp.h";
+#include "myComp.h"
 
 void helloP(){
     printf("Hello from the parser\n");
