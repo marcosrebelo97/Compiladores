@@ -1,14 +1,12 @@
-# Compiladores
+## Compiladores - Análise Léxica e Sintática
 
-    Parser;
+Etapas do trabalho: 
+- [ ] Parser;
+- [ ] Strips;
+- [ ] Análise Léxica;
+- [ ] Análise Sintática. 
 
-    Strips;
-
-    Análise Lexa;
-
-    Análise Sintática. 
-
-Funções: 
+Funções:
 
 ● analex(): função que implementa o diagrama de transição do analisador léxico.
 
