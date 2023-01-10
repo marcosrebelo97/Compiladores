@@ -1,7 +1,7 @@
 ## Compiladores - Análise Léxica e Sintática
 
 Etapas do trabalho: 
-- [ ] Parser;- [ ]
+- [ ] Parser;
 - [ ] Strips;
 - [ ] Análise Léxica;
 - [ ] Análise Sintática. 
