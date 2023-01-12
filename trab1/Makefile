@@ -12,5 +12,8 @@ main.o: main.c parser.c
 parser.o: parser.c myComp.h
 	$(CC) -o parser.o parser.c $(CFLAGS)
 
-clean:
+run:
+	./prog main.c
+
+clear:
 	rm -rf *.o *~ prog
