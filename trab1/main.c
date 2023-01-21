@@ -10,11 +10,13 @@ int main(int argc, char *argv[]){
     arq = fopen(argv[1],"r");
 
     prox_char(argv[1]);
+    
+    /*
     printf("hello from the main\n");
   
     helloP();
 
-    scanf("%d",&a);
+    /*scanf("%d",&a);
     switch (a)
     {
     case 1:
@@ -31,5 +33,12 @@ int main(int argc, char *argv[]){
         break;
     }
 
-    return a;
+    return a;*/
+    if(arq != NULL){
+        while(fgets(str,100,arq)){
+            printf("%s",str);
+        }   
+    }
+    return 1;
+    
 }

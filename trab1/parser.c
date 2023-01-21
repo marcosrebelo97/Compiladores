@@ -1,7 +1,8 @@
 #include "myComp.h"
 
 void helloP(){
-    printf("Hello from the parser\n");
+    printf("Hello from parser\n");
+    print();
 }
 
 void prox_char(char *nome){
@@ -12,10 +13,10 @@ void prox_char(char *nome){
     printf("%s\n",nome);
     while ((c = getc(arq)) != EOF)
     {
-        if(c != '\n' && c != '\t' && c != ' '){
-            printf("%c \n",c);
+        if(c != '\n' && c != '\t' && c != ' '){            
+            printf("%c",c);
         }
+        printf("-");
     }
-            printf("\n");
 
 }

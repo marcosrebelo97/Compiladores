@@ -8,4 +8,6 @@ void helloP();
 
 void prox_char(char *nome);
 
+void print();
+
 #endif
