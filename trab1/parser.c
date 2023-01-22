@@ -16,7 +16,6 @@ void prox_char(char *nome){
         if(c != '\n' && c != '\t' && c != ' '){            
             printf("%c",c);
         }
-        printf("-");
     }
-
+    printf("\n");
 }
