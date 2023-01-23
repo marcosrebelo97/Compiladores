@@ -10,6 +10,7 @@ void analisa(char *palavra1, char *palavra2){
 
     while(palavra1[i] != '\0'){
         recon_flag = 0;
+        indicie_palavra2=0;
         while(recon_flag !=1 && indicie_palavra2 < 8){
             if(palavra1[i] != '\n' && palavra1[i] != '\t' && palavra1[i] != ' '){
                 palavra2[indicie_palavra2] = palavra1[i];
@@ -20,13 +21,13 @@ void analisa(char *palavra1, char *palavra2){
             }
             if(strcmp(palavra2,GOTO) == 0){
                 printf("reconheceu: %s\n",palavra2);
-                indicie_palavra2=0;
                 recon_flag = 1;
+                init_buff(palavra2,8);
             }
-            printf("%d\t",i);
+            printf("palavra2 : %s\n",palavra2);
+            printf("letra = %d %c\n",i,palavra1[i]);
             i++;
         }
-        init_buff(palavra2,8);
     }
     free(palavra2);
 }
