@@ -10,6 +10,8 @@ void init_buff(char *buff,int tam);
 
 void print_char(char *buff);
 
+void analisa(char *palavra1, char *palavra2);
+
 
 #define VOID "void"
 #define INT "int"

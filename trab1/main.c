@@ -1,7 +1,7 @@
 #include "myComp.h"
 
 int main(int argc, char *argv[]){
-    char *str,str2[4] = "goto";
+    char *str,*str2 = NULL;
     int buff_size = 400000;
     str = (char*)malloc(buff_size*sizeof(char));
     init_buff(str,buff_size);
@@ -10,15 +10,7 @@ int main(int argc, char *argv[]){
     print_char(str);
 
     printf("%s\n",GOTO);
-
-    if(strcmp(str2,GOTO)==0){
-        printf("%d",strcmp(str2,GOTO));
-        printf("São iguais!\n");
-    }
-    else{
-        printf("%d",strcmp(str2,GOTO));
-        printf("Não sao iguais!\n");
-    }
+    analisa(str,str2);
 
 
     
