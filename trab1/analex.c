@@ -51,10 +51,6 @@
 #define OP_CHF "}"
 
 
-void comp(char *buff_temp){ /* essa função aqui é onde tu vai comparar as string*/
-    
-}
-
 
 
 
