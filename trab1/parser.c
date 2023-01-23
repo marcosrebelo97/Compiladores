@@ -21,7 +21,6 @@ void init_buff(char *buff,int tam){
     int i;
     for(i = 0; i < tam;i++){
         buff[i] = '\0';
-        i++;
     }
 }
 
