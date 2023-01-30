@@ -1,3 +1,1 @@
-goto
-goto
-goto
+void
