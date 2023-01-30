@@ -34,6 +34,20 @@ void analisa(char *palavra1, char *palavra2)
             //     recon_flag = 1;
             //     printf("reconheceu: %s\n", palavra2);
             // } */
+            if (indicie_palavra2 == 1)
+            {
+                recon_flag = comparar_tam1(palavra2);
+                printf("%d \n", recon_flag);
+            }
+            i++;
+
+            if (indicie_palavra2 == 2)
+            {
+                recon_flag = comparar_tam2(palavra2);
+                printf("%d \n", recon_flag);
+            }
+            i++;
+
             if (indicie_palavra2 == 3)
             {
                 recon_flag = comparar_tam3(palavra2);
@@ -58,13 +72,6 @@ void analisa(char *palavra1, char *palavra2)
             if (indicie_palavra2 == 8)
             {
                 recon_flag = comparar_tam8(palavra2);
-                printf("%d \n", recon_flag);
-            }
-            i++;
-
-            if (indicie_palavra2 == 8)
-            {
-                recon_flag = comparar_tam2(palavra2);
                 printf("%d \n", recon_flag);
             }
             i++;
@@ -275,7 +282,7 @@ int comparar_tam2(char *palavra)
     return 0;
 }
 
-int comparar_tam2(char *palavra)
+int comparar_tam1(char *palavra)
 {
     if (strcmp(palavra, OP_V) == 0)
     {
@@ -294,5 +301,108 @@ int comparar_tam2(char *palavra)
         printf("Token: %s\t", palavra);
         return 1;
     }
+
+    if (strcmp(palavra, OP_PF) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_CA) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_CF) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_CHA) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_CHF) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_SUM) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_SUB) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_MULT) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_DIV) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_P) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_IT) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_DP) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_EX) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_PT) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_ME) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_MA) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_R) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
     return 0;
 }

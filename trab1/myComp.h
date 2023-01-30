@@ -14,6 +14,10 @@ void analisa(char *palavra1, char *palavra2);
 
 int comparar_tam3(char *palavra);
 
+int comparar_tam1(char *palavra);
+
+int comparar_tam2(char *palavra);
+
 int comparar_tam4(char *palavra);
 
 int comparar_tam5(char *palavra);
@@ -21,8 +25,6 @@ int comparar_tam5(char *palavra);
 int comparar_tam6(char *palavra);
 
 int comparar_tam8(char *palavra);
-
-int comparar_tam2(char *palavra);
 
 #define OP_V ","            /*1*/
 #define OP_PV ";"           /*1*/
