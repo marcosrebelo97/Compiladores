@@ -20,6 +20,8 @@ int comparar_tam5(char *palavra);
 
 int comparar_tam6(char *palavra);
 
+int comparar_tam8(char *palavra);
+
 int comparar_tam2(char *palavra);
 
 #define OP_V ","            /*1*/

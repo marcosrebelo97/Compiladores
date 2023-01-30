@@ -274,3 +274,25 @@ int comparar_tam2(char *palavra)
     }
     return 0;
 }
+
+int comparar_tam2(char *palavra)
+{
+    if (strcmp(palavra, OP_V) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_PV) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+
+    if (strcmp(palavra, OP_PA) == 0)
+    {
+        printf("Token: %s\t", palavra);
+        return 1;
+    }
+    return 0;
+}
