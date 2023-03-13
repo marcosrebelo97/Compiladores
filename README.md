@@ -1,4 +1,5 @@
-## Compiladores - Análise Léxica e Sintática
+<h3 align="center"> Compiladores - Análise Léxica e Sintática </h3>
+
 
 Etapas do trabalho: 
 - [ ] Parser;
